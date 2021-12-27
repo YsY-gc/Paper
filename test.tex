@@ -1,0 +1,50 @@
+\documentclass[lettersize,journal]{IEEEtran}
+\usepackage{amsmath,amsfonts}
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\usepackage{array}
+\usepackage[caption=false,font=normalsize,labelfont=sf,textfont=sf]{subfig}
+\usepackage{textcomp}
+\usepackage{stfloats}
+\usepackage{url}
+\usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage{cite}
+
+\title{Neural Network for Phase Retrieval in Multiframe-Collected Lensless Microscope}
+\author{Yang Shuyin}
+\date{\today}
+
+\bibliographystyle{IEEEtran}
+
+\begin{document}
+
+	\maketitle
+
+	\begin{abstract}
+		Lens-free microscopic imaging is an important role in the field of microscopic imaging. Based on its imaging principle, we need to reconstruct the phase information of the wave front from the brightness image collected by the photosensitive element of the image plane (called hologram), and then carry out amplitude or phase imaging of the object plane, which involves phase recovery. In recent years there have been some deep learning method is used instead of traditional algorithm of phase recovery work, however, most of the studies are more likely to use a single measurement of restoring the phase holograms, undeniably, this method is to reduce the complexity of mechanical structure of acquisition system, but in this lower bound, Neither the traditional algorithm nor the deep learning method using neural network has satisfactory phase recovery effect, which is difficult to reach the practical standard. In this article, we put forward a different multiple frames from the focal distance of the acquisition of network for no lens microscopic imaging phase recovery, in view of the hologram multiframe collection, our network design is a kind of decoupling - fusion structure, this structure has the advantage that the network can be split and assembly of freedom, in response to a hardware system change brings the change of sampling frames, But at the same time, the prior information learned by the network can be retained. In addition, we demonstrate the excellent performance and good generalization ability of our network in phase recovery task. Our network is based on self-supervised learning without obtaining real tags. 
+	\end{abstract}
+
+	\begin{IEEEkeywords}
+		Lens-free microscopy, phase retrieval, multiframe, neural network.
+	\end{IEEEkeywords}
+
+	\section{Introduction}
+	\IEEEPARstart{L}{ensless} microscopic imaging technology has been widely concerned by researchers in related fields in recent years because of its large field of view and fast imaging. According to its imaging principle, we hope that the brightness image recovered from the object surface contains the complex amplitude information of amplitude and phase, so that amplitude or phase imaging can be carried out.\cite{zhang2008recommendation}
+
+	\section{Background}
+
+	\section{Proposed Method}
+
+	\section{Experiments}
+		\subsection{Prepare Datasets}
+		\subsection{Pretrained}
+		\subsection{Online-Learning}
+
+	\section{Ablation Study}%烧蚀实验
+
+	\section{Conclusion}%总结
+
+
+	\bibliography{cited}
+\end{document}

@@ -1,0 +1,2 @@
+1. latex test.tex 生成dvi
+2. dvipdfmx test.dvi dvi文件转pdf文件
